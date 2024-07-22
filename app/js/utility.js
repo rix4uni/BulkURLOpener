@@ -239,6 +239,14 @@ function encodeSearchQuery(string) {
         string = `https://duckduckgo.com/?q=${encodeURI(string)}`;
     } else if (setting === "bingEngine") {
         string = `https://www.bing.com/search?q=${encodeURI(string)}`;
+    } else if (setting === "yandexEngine") {
+        string = `https://yandex.com/search?text=${encodeURI(string)}`;
+    } else if (setting === "braveEngine") {
+        string = `https://search.brave.com/search?q=${encodeURI(string)}`;
+    } else if (setting === "yahooEngine") {
+        string = `https://in.search.yahoo.com/search?p=${encodeURI(string)}`;
+    } else if (setting === "aolEngine") {
+        string = `https://search.aol.com/aol/search;_ylc=?q=${encodeURI(string)}`;
     }
     return string;
 }

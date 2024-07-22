@@ -448,6 +448,14 @@ function settingsBuildSwitch(modalBody, userLists, userSettings, setting) {
                 output = "DuckDuckGo";
             } else if (userSettings[setting] === "bingEngine") {
                 output = "Bing";
+            } else if (userSettings[setting] === "yandexEngine") {
+                output = "Yandex";
+            } else if (userSettings[setting] === "braveEngine") {
+                output = "Brave";
+            } else if (userSettings[setting] === "yahooEngine") {
+                output = "Yahoo";
+            } else if (userSettings[setting] === "aolEngine") {
+                output = "Aol";
             }
             appendHtml(modalBody, buildSyncSettingDisplay(setting, output));
             break;
